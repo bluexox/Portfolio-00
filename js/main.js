@@ -88,6 +88,13 @@ $(document).ready(function () {
    $(".re_close").hide();
    $(".re_bg").hide();
 
+   $(".re_wrtn").hide();
+   $(".link .wrtn").click(function () {
+      $(".re_close").fadeIn();
+      $(".re_bg").fadeIn();
+      $(".re_wrtn").fadeIn();
+   })
+
    $(".re_acheal").hide();
    $(".link .acheal").click(function () {
       $(".re_close").fadeIn();
@@ -187,7 +194,7 @@ $(document).ready(function () {
       clickable: true,
       loop: true,
    });
-   
+
    $(".re_bymeal").hide();
    $(".link .bymeal").click(function () {
       $(".re_close").fadeIn();
