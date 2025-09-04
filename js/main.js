@@ -135,6 +135,26 @@ $(document).ready(function () {
       loop: true,
    });
 
+   $(".re_milland").hide();
+   $(".link .milland").click(function () {
+      $(".re_close").fadeIn();
+      $(".re_bg").fadeIn();
+      $(".re_milland").fadeIn();
+   })
+   $(".re_close").click(function () {
+      $(".re_close").hide();
+      $(".re_bg").hide();
+      $(".re_milland").hide();
+   })
+   var re_milland = new Swiper(".re_milland", {
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+      clickable: true,
+      loop: true,
+   });
+
    $(".re_whale").hide();
    $(".link .whale").click(function () {
       $(".re_close").fadeIn();
@@ -278,5 +298,6 @@ $(document).ready(function () {
       $(".re_bg").hide();
       $(".re_malJaranda").hide();
    })
+
 
 })
